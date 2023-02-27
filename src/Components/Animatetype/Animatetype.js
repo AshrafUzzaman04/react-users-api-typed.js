@@ -6,7 +6,7 @@ const Animatetype = () => {
   const [text] = useTypewriter({
     // words: ["Hello", "From", "Typewriter", "Hook!"],
     words: ["Eat", "Sleep", "Code", "Repeat!"],
-    loop: 3,
+    loop: Infinity,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
   });
   return (
@@ -16,10 +16,10 @@ const Animatetype = () => {
           className="inline-block"
           options={{
             strings: [
-              "Hellow motherfucker",
-              "Hellow bosedike",
-              "Hellow chutiya",
-              "Hellow londay",
+              "Hello cute boy",
+              "Hello lucky boy",
+              "Hello hot boy",
+              "Hello sexy boy",
             ],
             autoStart: true,
             delay: 40,
@@ -32,8 +32,8 @@ const Animatetype = () => {
             cursor
             cursorStyle="_"
             typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
+            deleteSpeed={40}
+            delaySpeed={100}
           />
         </span>
       </h1>

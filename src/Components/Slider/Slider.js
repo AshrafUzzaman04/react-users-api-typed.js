@@ -12,10 +12,14 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import slide_image_1 from "../../images/myimg (1).png";
 import slide_image_2 from "../../images/myimg (2).png";
 import slide_image_3 from "../../images/myimg (3).png";
+import slide_image_4 from "../../images/myimg (4).png";
+import slide_image_5 from "../../images/myimg (5).png";
+import slide_image_6 from "../../images/myimg (6).png";
 
 function Slider() {
   return (
     <div className="container">
+      <h1 className="heading">Flower Gallery</h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -47,21 +51,17 @@ function Slider() {
           <img src={slide_image_3} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
+          <img src={slide_image_4} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_5} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_6} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide_image_3} alt="slide_image" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>

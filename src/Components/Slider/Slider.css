@@ -54,11 +54,6 @@ html {
   background: #f9f9f9;
 }
 
-body {
-  font-size: 1.6rem;
-  background: var(--bg);
-}
-
 .container {
   max-width: 124rem;
   padding: 4rem 1rem;
@@ -73,13 +68,12 @@ body {
 
 .swiper_container {
   height: 52rem;
-  padding: 2rem 0;
+  padding: 2rem !important;
   position: relative;
 }
 
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  width: fit-content !important;
   position: relative;
 }
 
@@ -98,8 +92,9 @@ body {
 }
 
 .swiper-slide img {
-  width: 37rem;
+  margin: auto;
   height: 42rem;
+  width: max-content;
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -170,9 +165,10 @@ body {
 }
 
 .swiper-pagination {
-  position: relative;
+  position: relative !important;
   width: 15rem !important;
   bottom: 1rem;
+  width: max-content !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
