@@ -10,7 +10,7 @@ const Animatetype = () => {
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
   });
   return (
-    <div className="text-center">
+    <div className="text-center pt-5">
       <h1 className="text-3xl font-bold text-[#000000] inline-block text-center">
         <Typewriter
           className="inline-block"

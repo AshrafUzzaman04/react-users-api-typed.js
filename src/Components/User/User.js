@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import backGround from "../../images/background/users_grid_bg.png";
 
 const User = (props) => {
@@ -12,15 +12,22 @@ const User = (props) => {
     profession,
     email,
   } = props.user;
+  const addedMembers = props.handleClickAdded;
+
+  // background image styles
   const img = {
     backgroundImage: `url(${backGround})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
+
+  const [mobile, setMobile] = useState("");
+  // onclick to show the user number field
+  const showMobileNumber = () => setMobile(mobile_number);
   return (
     <div
-      className="border-2 border-indigo-200 p-5 m-5 inline-block w-11/12 sm:w-full mx-auto md:mx-0"
+      className="border-2 border-indigo-200 p-5 m-5 inline-block w-11/12 sm:w-full mx-auto md:mx-0 rounded-lg"
       style={img}
     >
       <span className="block text-blue-700 font-bold">
@@ -36,7 +43,7 @@ const User = (props) => {
       </span>
       <span className="block text-blue-700 font-bold">
         Mobile Number:{" "}
-        <span className="text-black font-semibold"> {mobile_number}</span>
+        <span className="text-black font-semibold"> {mobile}</span>
       </span>
       <span className="block text-blue-700 font-bold">
         Father Name:{" "}
@@ -53,6 +60,16 @@ const User = (props) => {
         Profession:{" "}
         <span className="text-black font-semibold">{profession}</span>
       </span>
+
+      <button
+        className="btn btn-info mr-4 my-4 font-bold text-white"
+        onClick={showMobileNumber}
+      >
+        Show Mobile Number
+      </button>
+      <button className="btn" onClick={() => addedMembers(email)}>
+        add me on your team
+      </button>
     </div>
   );
 };
